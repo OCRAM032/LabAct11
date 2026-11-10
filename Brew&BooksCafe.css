@@ -1,0 +1,157 @@
+/* Brew & Books Cafe */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3b2a2a;
+    background-color: #fdf3f0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-header {
+    background-color: #8b3a3a;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    gap: 8px;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.25s ease;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hero {
+    min-height: 320px;
+    padding: 56px 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    margin: 0 0 12px;
+    font-size: 40px;
+    color: #8b3a3a;
+}
+
+.hero p {
+    margin: 0 0 24px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e4573d;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.btn:hover {
+    background-color: #c44530;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn:focus,
+.nav a:focus {
+    outline: 3px solid #f2b134;
+    outline-offset: 2px;
+}
+
+.menu {
+    padding: 0 24px 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e4b8b0;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 240px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(139, 58, 58, 0.2);
+}
+
+.card h2 {
+    margin: 0 0 8px;
+    color: #8b3a3a;
+}
+
+.card p {
+    margin: 0 0 8px;
+    line-height: 1.5;
+}
+
+.price {
+    font-weight: bold;
+    color: #e4573d;
+}
+
+main {
+    flex: 1;
+}
+
+.site-footer {
+    background-color: #3b2a2a;
+    color: #fdf3f0;
+    text-align: center;
+    padding: 20px 24px;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
